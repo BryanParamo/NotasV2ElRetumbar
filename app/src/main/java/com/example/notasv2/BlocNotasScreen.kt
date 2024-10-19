@@ -24,7 +24,7 @@ import androidx.compose.foundation.layout.Column
 fun BlocNotasScreen(navController: NavHostController, notesViewModel: NotesViewModel = viewModel()) {
     Scaffold(
         topBar = {
-            TopAppBar(title = { Text(text = "BlocNotas") })
+            TopAppBar(title = { Text(text = "BlocNotas Mamalon") })
         },
         floatingActionButton = {
             FloatingActionButton(
