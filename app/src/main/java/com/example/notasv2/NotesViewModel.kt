@@ -2,16 +2,14 @@ package com.example.notasv2
 
 import androidx.lifecycle.ViewModel
 import androidx.compose.runtime.mutableStateListOf
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.setValue
 
 class NotesViewModel : ViewModel() {
-    // Lista de notas
+    // Lista de notas utilizando un estado mutable
     var notes = mutableStateListOf<String>()
-        private set
 
-    // Método para agregar una nota
     fun addNote(note: String) {
-        notes.add(note)
+        notes.add(note) // Agrega la nueva nota a la lista
     }
 }
+
+

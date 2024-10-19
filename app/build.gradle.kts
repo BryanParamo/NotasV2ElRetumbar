@@ -47,6 +47,7 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+    buildToolsVersion = "35.0.0"
 }
 
 dependencies {
@@ -54,6 +55,8 @@ dependencies {
     implementation("androidx.compose.ui:ui:1.5.0")
     implementation("androidx.activity:activity-compose:1.7.2")
     implementation("androidx.compose.material3:material3:1.0.1")
+
+
 
     // Tu BOM para Compose gestiona las versiones automáticamente.
     implementation(platform(libs.androidx.compose.bom))
@@ -70,7 +73,8 @@ dependencies {
     // Core y compatibilidad con actividades
     implementation(libs.androidx.core.ktx) // androidx.core:core-ktx
     implementation(libs.androidx.activity.compose)
-    implementation(libs.androidx.lifecycle.viewmodel.compose) // androidx.activity:activity-compose
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
+    implementation(libs.androidx.hilt.navigation.compose) // androidx.activity:activity-compose
 
     // Dependencias de testing
     testImplementation(libs.junit) // junit:junit
