@@ -84,4 +84,3 @@ fun NotesList(notes: List<String>, modifier: Modifier = Modifier) {
         }
     }
 }
-

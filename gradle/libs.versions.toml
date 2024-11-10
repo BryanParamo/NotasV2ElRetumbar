@@ -14,6 +14,12 @@ roomCommon = "2.6.1"
 roomKtx = "2.6.1"
 roomRuntimeAndroid = "2.7.0-alpha10"
 roomRuntimeJvm = "2.7.0-alpha10"
+compiler = "1.1.1"
+runtime = "1.1.1"
+roomCompiler = "2.7.0-alpha10"
+roomRuntime = "2.7.0-alpha10"
+roomKtxVersion = "2.7.0-alpha10"
+comAndroidLegacyKaptGradlePlugin = "8.8.0-alpha08"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -36,6 +42,12 @@ androidx-room-common = { group = "androidx.room", name = "room-common", version.
 androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "roomKtx" }
 androidx-room-runtime-android = { group = "androidx.room", name = "room-runtime-android", version.ref = "roomRuntimeAndroid" }
 androidx-room-runtime-jvm = { group = "androidx.room", name = "room-runtime-jvm", version.ref = "roomRuntimeJvm" }
+compiler = { group = "android.arch.persistence.room", name = "compiler", version.ref = "compiler" }
+runtime = { group = "android.arch.persistence.room", name = "runtime", version.ref = "runtime" }
+androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "roomCompiler" }
+androidx-room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "roomRuntime" }
+room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "roomKtxVersion" }
+com-android-legacy-kapt-gradle-plugin = { group = "com.android.legacy-kapt", name = "com.android.legacy-kapt.gradle.plugin", version.ref = "comAndroidLegacyKaptGradlePlugin" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
