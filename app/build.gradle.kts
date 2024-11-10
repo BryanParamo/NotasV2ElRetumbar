@@ -74,9 +74,7 @@ dependencies {
     implementation(libs.androidx.core.ktx) // androidx.core:core-ktx
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.lifecycle.viewmodel.compose)
-    implementation(libs.androidx.hilt.navigation.compose)
-    implementation(libs.androidx.room.common)
-    implementation(libs.androidx.room.ktx) // androidx.activity:activity-compose
+    implementation(libs.androidx.hilt.navigation.compose) // androidx.activity:activity-compose
 
     // Dependencias de testing
     testImplementation(libs.junit) // junit:junit
